@@ -1,0 +1,29 @@
+{
+  "author": "David Oliveira <d.oliveira@prozone.org>",
+  "name": "holiday-pt",
+  "description": "Portuguese holiday list and helper functions",
+  "version": "0.0.2",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/davidfoliveira/node-holiday-pt/"
+  },
+  "main": "./index.js",
+  "bin": {},
+  "scripts": {
+    "test": "./run_tests"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "license": "Copyleft",
+  "engines": {
+    "node": ">=0.10.5"
+  },
+  "keywords": [
+    "holiday",
+    "holidays",
+    "pt",
+    "portuguese",
+    "portugal"
+  ]
+}
