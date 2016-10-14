@@ -12,18 +12,20 @@
   "scripts": {
     "test": "./run_tests"
   },
-  "dependencies": {},
+  "dependencies": {
+    "jscrap": "0.0.10"
+  },
   "devDependencies": {},
   "optionalDependencies": {},
-  "license": "Copyleft",
+  "license": "MIT",
   "engines": {
     "node": ">=0.10.5"
   },
   "keywords": [
     "holiday",
     "holidays",
-    "pt",
+    "br",
     "portuguese",
-    "portugal"
+    "brazil"
   ]
 }
