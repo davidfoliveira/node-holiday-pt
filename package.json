@@ -10,7 +10,7 @@
   "main": "./index.js",
   "bin": {},
   "scripts": {
-    "test": "./run_tests"
+    "test": "mocha"
   },
   "dependencies": {
     "jscrap": "0.0.10"
