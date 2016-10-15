@@ -15,7 +15,10 @@
   "dependencies": {
     "jscrap": "0.0.10"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  },
   "optionalDependencies": {},
   "license": "MIT",
   "engines": {
