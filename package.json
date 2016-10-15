@@ -1,29 +1,35 @@
 {
-  "author": "David Oliveira <d.oliveira@prozone.org>",
-  "name": "holiday-pt",
-  "description": "Portuguese holiday list and helper functions",
-  "version": "0.0.2",
+  "author": ["David Oliveira <d.oliveira@prozone.org>", "Alex Lucas da Rocha Silva <alex.rochas@yahoo.com.br"],
+  "name": "holiday-br",
+  "description": "Brazilian holiday list and helper functions",
+  "version": "0.0.1",
   "repository": {
     "type": "git",
-    "url": "https://github.com/davidfoliveira/node-holiday-pt/"
+    "url": "https://github.com/alexrochas/node-holiday-br/"
   },
   "main": "./index.js",
   "bin": {},
   "scripts": {
-    "test": "./run_tests"
+    "test": "mocha"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jscrap": "0.0.10",
+    "async": "1.5.2",
+    "chai": "*",
+    "mocha": "*"
+  },
   "optionalDependencies": {},
-  "license": "Copyleft",
+  "license": "MIT",
   "engines": {
     "node": ">=0.10.5"
   },
   "keywords": [
     "holiday",
     "holidays",
-    "pt",
+    "br",
     "portuguese",
-    "portugal"
+    "brazil"
   ]
 }

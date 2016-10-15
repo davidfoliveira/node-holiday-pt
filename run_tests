@@ -1,7 +1,0 @@
-#!/bin/sh
-
-ls -1 test/ | while read file; do
-	echo "Running test $file:";
-	node "test/$file" || exit -1;
-	echo
-done && echo 'Everything OK!'
