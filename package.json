@@ -13,9 +13,10 @@
     "test": "mocha"
   },
   "dependencies": {
-    "jscrap": "0.0.10"
   },
   "devDependencies": {
+    "jscrap": "0.0.10",
+    "async": "1.5.2",
     "chai": "*",
     "mocha": "*"
   },
