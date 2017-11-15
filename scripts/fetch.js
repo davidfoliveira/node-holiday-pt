@@ -17,19 +17,24 @@ async.mapSeries(years,
 				console.log("Error getting "+y+" holidays: ",err);
 				return next(err,null);
 			}
-			$(".column-left .display-holidays-box .list-holiday").each(function(holyEl){
+
+			// For each month
+			$("span.holiday-month").each(function(monthSpan){
 				var
-					day		= parseInt(holyEl.find(".list-holiday-day").text().trim()),
-					month	= holyEl.find(".list-holiday-month").text().trim(),
-					name	= holyEl.find(".list-holiday-name").text().trim(),
-					monthN	= months[month.toLowerCase()];
+					monthN = months[monthSpan.text().toLowerCase().substr(0,3)];
 
 				if ( !monthN ) {
 					console.log("No month number for '"+month+"'");
 					return next(new Error("No month number for '"+month+"'"),false);
 				}
-				hdays.push([y,monthN,day,name]);
+				monthSpan.find("+ul.list-holidays .list-holiday-box").each(function(holyEl){
+					var
+						day	= parseInt(holyEl.find(".holiday-day").text().trim()),
+						name	= holyEl.find(".list-holiday-title").text().trim();
+					hdays.push([y,monthN,day,name]);
+				});
 			});
+
 			return next(null,true);
 		});
 	},
